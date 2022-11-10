@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Javascript -->
+    <script src="app.js"></script>
+
+</head>
+<body>
+
+    <!-- Home -->
+    <div class="home">
+
+        <!-- Title -->
+        <h1 id="homeTitle">Bienvenido a Snake</h1>
+        <p id="homeText">Seleccione los parámetros de la partida y pulse continuar</p>
+
+        <!-- Form -->
+        <div class="home-game-form">
+            <form id="homeGameForm">
+
+                <label for="mapWidth">Ancho de mapa (5-25):</label>
+                <input type="text" id="mapWidth">
+
+                <label for="mapHeigth">Alto de mapa (5-25):</label>
+                <input type="text" id="mapHeigth">
+
+                <label for="snakeStartingSize">Tamaño inicial de la serpiente (1-3):</label>
+                <input id="snakeStartingSize" type="snakeStartingSize">
+
+                <label for="snakeStartingSpeed">Velocidad inicial de la serpiente (1-4):</label>
+                <input type="text" id="snakeStartingSpeed">
+
+                <button id="homeGameFormContinueButton">Continuar</button>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Game -->
+    <div class="game">
+
+        <!-- Scoreboard Screen -->
+        <div class="scoreboard-screen">
+
+            <h1 id="scoreboardScreenTitle">Puntuación:</h1>
+            <p id="scoreboardScreenApples">Manzanas comidas: </p>
+            <p id="scoreboardScreenScore">Puntos: </p>
+
+        </div>
+
+        <!-- Game Screen -->
+        <div class="game-screen">
+
+            <!-- Title -->
+            <h1 id="gameScreenTitle">Snake</h1>
+            <p id="gameScreenText">Esquiva los bordes, tu cuerpo y trata de comer todas las manzanas posibles</p>
+
+            <!-- Game Board -->
+            <div class="game-board">
+
+                <!--
+                <div class="game-board-row">
+
+                    <div id="0" class="game-board-cell"></div>
+                    <div id="1" class="game-board-cell"></div>
+                    <div id="2" class="game-board-cell"></div>
+
+                </div>
+
+                <div class="game-board-row">
+
+                    <div id="3" class="game-board-cell"></div>
+                    <div id="4" class="game-board-cell"></div>
+                    <div id="5" class="game-board-cell"></div>
+
+                </div>
+
+                <div class="game-board-row">
+
+                    <div id="6" class="game-board-cell"></div>
+                    <div id="7" class="game-board-cell"></div>
+                    <div id="8" class="game-board-cell"></div>
+
+                </div>
+                -->
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="game-end-buttons">
+                <button id="restartGameButton">Reiniciar</button>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

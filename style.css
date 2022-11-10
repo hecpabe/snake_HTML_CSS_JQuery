@@ -1,0 +1,145 @@
+
+
+/* ========== ALL ========== */
+body{
+
+    font-family: sans-serif;
+    background-color: rgb(45, 45, 45);
+
+}
+
+/* ========== HOME ========== */
+.home{
+
+    justify-content: center;
+    text-align: center;
+
+}
+
+#homeTitle{
+
+    color: red;
+
+}
+
+#homeText{
+
+    color: aliceblue;
+
+}
+
+.home-game-form{
+
+    display: flex;
+    width: max-content;
+
+    background-color: cornflowerblue;
+    margin: 10px;
+    border: 1px solid aliceblue;
+    padding: 10px;
+
+    display: inline-block;
+    vertical-align: middle;
+    line-height: initial;
+    text-align: left;
+
+}
+
+label{
+
+    color: aliceblue;
+    float: left;
+    clear: left;
+
+}
+
+input{
+
+    float: left;
+    clear: left;
+    margin-bottom: 15px;
+
+}
+
+#homeGameFormContinueButton{
+
+    float: left;
+    clear: left;
+
+}
+
+/* ========== GAME ========== */
+
+.scoreboard-screen{
+
+    margin: 10px;
+    border: 1px solid aliceblue;
+    background-color: crimson;
+    color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: max-content;
+
+}
+
+#scoreboardScreenApples{
+
+    color: greenyellow;
+
+}
+
+#scoreboardScreenScore{
+
+    color: aqua;
+
+}
+
+.game-screen{
+
+    justify-content: center;
+    text-align: center;
+
+}
+
+#gameScreenTitle{
+
+    color: red;
+
+}
+
+#gameScreenText{
+
+    color: aliceblue;
+
+}
+
+.game-board{
+
+    /* Center Board */
+    display: inline-block;
+    vertical-align: middle;
+    line-height: initial;
+    text-align: left;
+
+    margin: 20px;
+
+}
+
+.game-board-row{
+
+    /* Display rows one below other */
+    display: flex;
+
+}
+
+.game-board-cell{
+
+    /* Set background color and border to difference the cells */
+    background-color: aliceblue;
+    border: 1px solid black;
+
+    /* Set fixed size to the cells */
+    width: 25px;
+    height: 25px;
+
+}
